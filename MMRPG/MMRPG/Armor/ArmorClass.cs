@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace MMRPG
 {
-    public class ChainArmor : ArmorClass
+    public abstract class ArmorClass
     {
-        public override int Defense => 20;
-        public override int Durability => 40;
+        public abstract int Defense { get; }
+        public abstract int Durability { get; }
     }
 }

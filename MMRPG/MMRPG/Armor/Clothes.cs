@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace MMRPG
 {
-    public class Clothes
+    public class Clothes : ArmorClass
     {
-        public int Defense { get; set; }
-        public int Durability { get; set; }
+        public override int Defense => 5;
+        public override int Durability => 10;
     }
 }
