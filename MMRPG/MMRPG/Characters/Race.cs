@@ -8,7 +8,7 @@ namespace MMRPG
 {
     public abstract class Race
     {
-        public abstract string Name { get; }
+        public abstract string Name { get; set; }
         public int Health { get; set; }
         public int Strength { get; set; }
         public int Dexterity { get; set; }

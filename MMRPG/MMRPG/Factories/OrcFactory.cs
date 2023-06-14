@@ -10,14 +10,14 @@ namespace MMRPG
     {
         public override Race CreateCharacter(string name)
         {
-            var human = new Human(name)
+            var orc = new Orc(name)
             {
                 Health = 50,
                 Strength = 40,
                 Dexterity = 10
             };
-            human.Wear(new Clothes());
-            return human;
+            orc.Wear(new Clothes());
+            return orc;
         }
     }
 }

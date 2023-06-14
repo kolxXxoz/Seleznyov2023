@@ -8,6 +8,18 @@ namespace MMRPG
 {
     public class CharacterCreator
     {
-        //TODO
+        private Race race;
+        public string Name;
+
+        public CharacterCreator(AbstractFactory factory)
+        {
+            race = factory.CreateCharacter(Name);
+        }
+
+        public Race Create(string name)
+        {
+            race.Name = name;
+            return race;
+        }
     }
 }

@@ -8,7 +8,7 @@ namespace MMRPG
 {
     public class Dwarf : Race
     {
-        public override string Name { get; }
+        public override string Name { get; set; }
 
         public Dwarf(string name)
         {
