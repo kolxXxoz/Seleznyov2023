@@ -9,12 +9,12 @@ namespace MMRPG
     public abstract class Race
     {
         public abstract string Name { get; }
-        public abstract int Health { get; set; }
-        public abstract int Strength { get; set; }
-        public abstract int Dexterity { get; set; }
-        public abstract object Armor { get; set; }
+        public int Health { get; }
+        public int Strength { get; }
+        public int Dexterity { get; }
+        public ArmorClass Armor { get; private set; }
 
-        public void Wear(object armor) 
+        public void Wear(ArmorClass armor)
         {
             Armor = armor;
         }

@@ -6,22 +6,13 @@ using System.Threading.Tasks;
 
 namespace MMRPG
 {
-    public class Dwarf
+    public class Dwarf : Race
     {
-        public string Name { get;}
-        public int Health { get; set; }
-        public int Strength { get; set; }
-        public int Dexterity { get; set; }
-        public object Armor { get; private set; }
+        public override string Name { get; }
 
         public Dwarf(string name)
         {
             Name = name;
-        }
-
-        public void Wear(object armor)
-        {
-            Armor = armor;
         }
     }
 }
